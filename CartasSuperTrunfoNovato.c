@@ -27,49 +27,49 @@ int main() {
     printf("============ Vamos começar cadastrando a carta 1 ============\n");
 
     printf("Digite uma letra de 'A' a 'H' para representar um dos estados\n");
-    scanf("%c", &estado1);
+    scanf(" %c", &estado1);
 
     printf("Digite o código da carta, que deverá ser composto pela letra do estado seguida por um número de 01 a 04. (exemplo: A01):\n");
-    scanf("%s", codigo1);
+    scanf(" %s", codigo1);
 
     printf("Digite o nome da cidade. Em cidades com nomes compostos, substitua o espaço por '_'. Exemplo: São_Paulo:\n");
-    scanf("%s", nomeCidade1);
+    scanf(" %s", nomeCidade1);
 
     printf("Digite a quantidade populacional:\n");
-    scanf("%d", &populacao1);
+    scanf(" %d", &populacao1);
 
     printf("Digite a área em km quadrado:\n");
-    scanf("%f", &area1);
+    scanf(" %f", &area1);
 
     printf("Digite o PIB:\n");
-    scanf("%f", &pib1);
+    scanf(" %f", &pib1);
 
     printf("Digite a quantidade de pontos turístico:\n");
-    scanf("%d", &pontosTuristicos1);
+    scanf(" %d", &pontosTuristicos1);
 
     // Cadastro da Carta 2:
     printf("\n============ Vamos cadastrando a carta 2 ============\n");
 
     printf("Digite uma letra de 'A' a 'H' para representar um dos estados:\n");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2);
 
     printf("Digite o código da carta, que deverá ser composto pela letra do estado seguida por um número de 01 a 04. (exemplo: A01):\n");
-    scanf("%s", codigo2);
+    scanf(" %s", codigo2);
 
     printf("Digite o nome da cidade. Em cidades com nomes compostos, substitua o espaço por '_'. Exemplo: São_Paulo:\n");
-    scanf("%s", nomeCidade2);
+    scanf(" %s", nomeCidade2);
 
     printf("Digite a quantidade populacional: \n");
-    scanf("%d", &populacao2);
+    scanf(" %d", &populacao2);
 
     printf("Digite a área em km quadrado:\n");
-    scanf("%f", &area2);
+    scanf(" %f", &area2);
 
     printf("Digite o PIB:\n");
-    scanf("%f", &pib2);
+    scanf(" %f", &pib2);
 
     printf("Digite a quantidade de pontos turístico:\n");
-    scanf("%d", &pontosTuristicos2);
+    scanf(" %d", &pontosTuristicos2);
 
     // Exibição dos Dados das Cartas:
     printf("\n ============ Carta 1 ============\n");
