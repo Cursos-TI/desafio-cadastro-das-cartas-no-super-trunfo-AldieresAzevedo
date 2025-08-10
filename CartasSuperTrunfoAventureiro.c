@@ -12,6 +12,7 @@ int main() {
     int pontosTuristicos1;
     float DensidadePopulacional1;
     float PIBPerCapita1;
+    float superPoder1;
 
     //Iniciando as variaveis para a carta 2
     char estado2;
@@ -23,6 +24,7 @@ int main() {
     int pontosTuristicos2;
     float DensidadePopulacional2;
     float PIBPerCapita2;
+    float superPoder2;
     
     // Apresentação:
     printf("============ Bem vindo ao jogo super trunfo ============\n");
@@ -82,6 +84,9 @@ int main() {
     DensidadePopulacional2 = populacao2 / area2;
     PIBPerCapita2 = pib2 / populacao2; 
 
+    superPoder1 = (populacao1+area1+pib1+pontosTuristicos1+PIBPerCapita1)+(1.0/DensidadePopulacional1);
+    superPoder2 = (populacao2+area2+pib2+pontosTuristicos2+PIBPerCapita2)+(1.0/DensidadePopulacional2);
+    
     // Exibição dos Dados das Cartas:
     printf("\n ============ Carta 1 ============\n");
     printf("Estado: %c\n", estado1);
@@ -104,6 +109,15 @@ int main() {
     printf("Número de pontos turísticos: %d\n",pontosTuristicos2);
     printf("Densidade Populacional: %.2f hab/km²\n",DensidadePopulacional2);
     printf("PIB per Capita: %.2f Reais\n", PIBPerCapita2);
+
+    printf("\n ====Resultado de comparação ====\n");
+    printf("População carta 1 > População carta 2: %d\n" ,populacao1 > populacao2);
+    printf("Área carta 1 > Área carta 2: %d\n", area1 > area2);
+    printf("Pib carta 1 > Pib carta 2: %d\n", pib1 > pib2);
+    printf("Pontos turisticos carta 1 > Pontos turisticos carta 2: %d\n", pontosTuristicos1 > pontosTuristicos2);
+    printf("Densidade populaciol carta 1 < Densidade populacional carta 2: %d\n", DensidadePopulacional1 < DensidadePopulacional2);
+    printf("PIB per capta carta 1 > PIB per capta carta 2: %d\n", PIBPerCapita1 > PIBPerCapita2);
+    printf("Super Poder carta 1 > Super Poder carta 2: %d\n", superPoder1 > superPoder2);
     printf("\n ============ fim ============\n");
 
     return 0;
