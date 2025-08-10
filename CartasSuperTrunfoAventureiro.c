@@ -76,11 +76,11 @@ int main() {
     scanf(" %d", &pontosTuristicos2);
 
     // calculo de Densidade/PIB
-    DensidadePopulacional1 = populacao1 / area1;
-    PIBPerCapita1 = pib1 / populacao1; 
+    DensidadePopulacional1 = (float)(populacao1 / area1);
+    PIBPerCapita1 = (float)((pib1 * 1000000000.0f) / populacao1);
 
-    DensidadePopulacional2 = populacao2 / area2;
-    PIBPerCapita2 = pib2 / populacao2; 
+    DensidadePopulacional2 = (float)(populacao2 / area2);
+    PIBPerCapita2 = (float)((pib2 * 1000000000.0f)/ populacao2);
 
     // Exibição dos Dados das Cartas:
     printf("\n ============ Carta 1 ============\n");
